@@ -95,13 +95,6 @@ footer{padding:30px 0 40px;color:var(--mute);border-top:1px solid var(--line);fo
 <div><label for="in-name">Name on jersey</label><input id="in-name" maxlength="14" placeholder="e.g. RAFI" autocomplete="off"></div>
 <div><label for="in-num">Number</label><input id="in-num" inputmode="numeric" maxlength="2" placeholder="10" autocomplete="off"></div>
 </div>
-<div class="sws" role="group" aria-label="Jersey colour">
-<span style="font-size:14px;color:var(--mute)">Colour</span>
-<button class="sw" type="button" data-c="#b3322e" data-n="Red" style="background:#b3322e" aria-label="Red" aria-pressed="true"></button>
-<button class="sw" type="button" data-c="#1f4fa8" data-n="Blue" style="background:#1f4fa8" aria-label="Blue" aria-pressed="false"></button>
-<button class="sw" type="button" data-c="#1f7a4d" data-n="Green" style="background:#1f7a4d" aria-label="Green" aria-pressed="false"></button>
-<button class="sw" type="button" data-c="#222222" data-n="Black" style="background:#222" aria-label="Black" aria-pressed="false"></button>
-</div>
 </div>
 </div>
 
@@ -186,7 +179,7 @@ function msg(){
   var nm=$('in-name').value.trim().toUpperCase()||'-', nu=$('in-num').value.replace(/\D/g,'')||'-';
   return 'Hi JERVIS, I want to order.\n'+
   'Jersey code: '+$('jc').value+'\n'+
-  'Jerseys: '+c.q+' x '+col.n+'\n'+
+  'Quantity: '+c.q+'\n'+
   'Print: '+nm+' / '+nu+'\n'+
   'Size: '+$('sz').value+'\n'+
   'Name: '+$('cn').value+'\n'+
